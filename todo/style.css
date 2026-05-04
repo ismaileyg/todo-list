@@ -1,0 +1,92 @@
+body {
+  font-family: Arial;
+  background: #0f0f0f;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  margin-top: 50px;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #ff9f0a;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= TASK ================= */
+
+li {
+  background: #1c1c1c;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 0.25s;
+
+  /* 🔥 FIX: taşmayı engeller */
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  /* düzgün flex yapı */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Hover */
+li:hover {
+  transform: scale(1.02);
+}
+
+/* 🔥 TIKLANINCA BÜYÜME */
+li.expanded {
+  transform: scale(1.06);
+  background: #2a2a2a;
+}
+
+/* BAŞLIK */
+.title {
+  font-weight: bold;
+
+  /* uzun yazı kontrol */
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* AÇIKLAMA */
+.desc {
+  font-size: 12px;
+  opacity: 0.7;
+
+  /* çok önemli fix */
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* SIL BUTONU */
+li button {
+  margin-top: 8px;
+  background: #ff3b30;
+  width: 60px;
+  padding: 5px;
+  font-size: 12px;
+}
