@@ -36,5 +36,5 @@ Animasyon geliştirmeleri
 
 1. Projeyi klonlayın:
 ```bash
-git clone https://github.com/kullaniciadi/todo-list.git
+git clone https://github.com/ismaileyg/todo-list.git
 
